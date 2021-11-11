@@ -12,8 +12,9 @@
 	// display: none;
 	position: relative;
 	margin-top: -53px;
-	padding-bottom: 30px;
+
 	top: 30px;
+	padding: 0 8px 30px;
 }
 
 .nav--visibility {
@@ -26,7 +27,7 @@
 
 
 .nav.fix {
-	padding: 30px 0;
+	padding: 30px 8px;
 	margin: -30px auto 0;
 	background-color: lighten($black, 20%);
 	transition: background-color 0.2s ease-in;
@@ -215,7 +216,7 @@
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	right: 20px;
+	right: 30px;
 	top: 40px;
 
 	&:hover {

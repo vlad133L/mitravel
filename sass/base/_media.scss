@@ -17,9 +17,12 @@
 	}
 
 	.featured-stories {
-		right: -150vw;
-		transition: 0.3s ease-in;
+		top: 0;
+		right: -800px;
+		bottom: 0;
+		transition: 0.65s ease-in;
 	}
+
 
 	.stories__btn {
 		display: block;

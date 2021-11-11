@@ -39,16 +39,18 @@
 
 
 .featured-stories--active {
+	position: relative;
+	background: rgba(60, 74, 81, 1) !important;
 	z-index: 15;
-	right: 0;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	opacity: 1;
+	right: 0 !important;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100% !important;
-	transition: 0.3s ease-in;
+	transition: 0.5s ease-in;
 }
 
 .featured-stories {
@@ -60,11 +62,10 @@
 	padding: 127px 177px 226px 133px;
 	background: rgba(60, 74, 81, 0.94);
 	mix-blend-mode: normal;
-	transition: 0.3s ease-in;
+	transition: 0.5s ease-in;
 }
 
 .stories__btn {
-	display: none;
 	position: absolute;
 	z-index: 16;
 	right: 10px;
@@ -73,26 +74,64 @@
 	width: 40px;
 	height: 36px;
 	background-color: transparent;
+
 }
 
 .stories__btn-line {
 	background-color: $white;
 	position: absolute;
-	height: 2px;
-	width: 100%;
 
-	&:nth-child(1) {
+	&--01 {
+		position: absolute;
+		background-color: $white;
+		height: 2px;
+		width: 100%;
 		left: 0;
 		bottom: 8px;
+		transition: transform 0.3s ease;
 	}
 
-	&:nth-child(2) {
+	&--02 {
+		position: absolute;
+		background-color: $white;
+		height: 2px;
+		width: 100%;
 		left: 0;
 		top: 10px;
+		transition: transform 0.3s ease;
 	}
 
-	&:nth-child(3) {
+	&--03 {
+		position: absolute;
+		background-color: $white;
+		height: 2px;
+		width: 100%;
 		top: 18px;
 		left: 0;
+	}
+}
+
+
+
+.stories__btn-line--active {
+
+
+	&-01 {
+		transform: rotate(45deg);
+		transform-origin: center;
+		bottom: 16px;
+		transition: transform 0.3s ease;
+	}
+
+	&-02 {
+		transform-origin: center;
+		transform: rotate(-45deg);
+		top: 17px;
+		transition: transform 0.3s ease;
+	}
+
+	&-03 {
+		width: 0;
+		height: 0;
 	}
 }
