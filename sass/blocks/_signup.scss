@@ -1,0 +1,119 @@
+.signup {
+	background-image: url('./../img/signup.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-height: 798px;
+	position: relative;
+	padding-top: 364px;
+	margin-bottom: 245px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(28, 46, 61, 0.46);
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.signup__container {
+	max-width: 1361px;
+	padding: 0 30px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.signup__text {
+	max-width: 368px;
+	z-index: 1;
+
+}
+
+.signup__title {
+	font-size: 64px;
+	line-height: 1.25;
+	color: $white;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+
+.signup__desc {
+	font-size: 16px;
+	line-height: 1.31;
+	color: $white;
+
+}
+
+.signup-form {
+	z-index: 2;
+	border-radius: 8px 8px 8px 8px;
+	display: flex;
+	flex-direction: column;
+	background-color: $white;
+	max-width: 501px;
+	padding-top: 76px;
+	margin-top: 129px;
+	// &:hover::after {
+	// 	background-color: rgba(28, 46, 61, 1);
+	// }
+	// &:active::after {}
+
+
+	// background-color: rgba(28, 46, 61, 1);
+
+}
+
+.signup__label {
+	font-size: 11px;
+	letter-spacing: 2px;
+	color: #1C2E3D;
+	font-weight: 700;
+	width: 357px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.signup__input {
+	border: none;
+	display: block;
+	font-size: 15px;
+	padding: 11px 0 3px;
+	outline: none;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+	transition: border-bottom 0.2s ease-in;
+
+	&:focus {
+		border-bottom: 1px solid rgba(28, 46, 61, 1);
+	}
+}
+
+
+.signup__button {
+	background: #73AFBA;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 2.18182px;
+	color: $white;
+	padding: 0 199px 0 201px;
+	height: 96px;
+	@include flex(center, center);
+	margin-top: 30px;
+	transition: background-color 0.2s ease-in;
+	width: 100%;
+	background-clip: padding-box;
+	box-sizing: border-box;
+
+	&:hover {
+		background-color: darken(#73AFBA, 15%);
+	}
+}

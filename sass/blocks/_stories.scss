@@ -1,0 +1,80 @@
+.stories {
+	margin-top: -140px;
+}
+
+
+.stories__row {
+	@include flex (space-between, flex-end);
+}
+
+.stories__form {
+	width: 100%;
+	@include flex(space-between, center);
+	background-color: $white;
+	padding-right: 62px;
+
+	input {
+		position: relative;
+		background: $white;
+		box-shadow: inset 0px -2px 0px rgba(223, 223, 223, 0.5);
+		border-radius: 4px 0px 0px 0px;
+		padding-left: 56px;
+		padding-right: 62px;
+		min-height: 120px;
+		width: 100%;
+		font-size: 25px;
+		// background-image: url("./../img/stories/search.svg");
+		// background-repeat: no-repeat;
+		// background-position: right 64px center;
+
+		&::placeholder {
+			font-size: 16px;
+			color: $accent;
+		}
+	}
+}
+
+.stories__watch {
+	font-size: 0;
+}
+
+.stories__video {
+	iframe {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 8px 8px 0px 0px;
+	}
+}
+
+.stories__scroll {
+	background: #73AFBA;
+	border-radius: 0px 4px 0px 0px;
+	height: 120px;
+	padding: 0 50px;
+	@include flex(space-between, center);
+}
+
+.stories__place {
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 2.18182px;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.stories__arrow {
+	&-first {
+		transition: 0.2s ease-in;
+
+		&:hover {
+			transform: scale(1.5);
+		}
+	}
+
+	&-second {
+		transition: 0.2s ease-in;
+
+		&:hover {
+			transform: scale(1.5);
+		}
+	}
+}

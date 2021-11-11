@@ -1,0 +1,73 @@
+.travel-pro {
+	padding: 150px 0;
+}
+
+.travel-pro__title {
+	margin-bottom: 96px;
+	max-width: 767px;
+}
+
+.travel-pro__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.travel-pro__item {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(115, 175, 186, 0.9);
+		mix-blend-mode: normal;
+		opacity: 0;
+		transition: 0.2s ease-in;
+		border-radius: 8px;
+	}
+
+
+	&:hover::after {
+		opacity: 1;
+
+
+	}
+
+	&:hover {
+		.travel-pro__desc {
+			opacity: 1;
+			z-index: 2;
+		}
+	}
+
+	img {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+}
+
+
+
+
+
+
+.travel-pro__desc {
+	font-weight: 700;
+	transition: 0.2s ease-in;
+	position: absolute;
+	bottom: 63px;
+	left: 53px;
+	font-size: 24px;
+	line-height: 1.29;
+	color: $white;
+	opacity: 0;
+}

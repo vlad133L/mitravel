@@ -1,0 +1,13 @@
+$black:#000000;
+$white:#ffffff;
+$accent:#1C2E3D;
+$btn:#E8594E;
+
+
+// Mixins
+
+@mixin flex($jc, $ai) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
