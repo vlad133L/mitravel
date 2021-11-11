@@ -17,31 +17,30 @@ let swiper = new Swiper('.slider-container',
 	
 });
 
-// const burger = document.querySelector('.header__menu');
-// const close = document.querySelector('.burger__close');
-// const menu = document.querySelector('.burger');
-// burger.addEventListener('click',() => {
-// 	menu.classList.add('burger--visible');
-// });
-// close.addEventListener('click',() => {
-// 	menu.classList.remove('burger--visible');
-// });
-
-
 const burger = document.querySelector('.menu');
 const close = document.querySelector('.burger__close');
 const menu = document.querySelector('.burger');
+const overflow = document.querySelector('body');
+
 burger.addEventListener('click',function(){
 	menu.classList.toggle('active');
+	overflow.classList.toggle('body--scroll');
+	nav.classList.add('nav--visibility');
 })
 close.addEventListener('click',function(){
 	menu.classList.remove('active');
+	overflow.classList.remove('body--scroll');
+	nav.classList.remove('nav--visibility');
 })
-
 document.querySelectorAll(".burger__link").forEach(burger__link => 
-	burger__link.addEventListener("click", () => menu.classList.remove('active'))
+	burger__link.addEventListener("click", () => menu.classList.remove('active') )
 )
-
+document.querySelectorAll(".burger__link").forEach(burger__link => 
+	burger__link.addEventListener("click", () => overflow.classList.remove('body--scroll'))
+)
+document.querySelectorAll(".burger__link").forEach(burger__link => 
+	burger__link.addEventListener("click", () => nav.classList.remove('nav--visibility'))
+)
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function (e) {

@@ -16,6 +16,10 @@
 	top: 30px;
 }
 
+.nav--visibility {
+	display: none;
+}
+
 .header__row {
 	@include flex(space-between, center);
 }
@@ -159,6 +163,8 @@
 	}
 }
 
+// Burger
+
 .burger {
 	position: fixed;
 	top: -150vh;
@@ -168,10 +174,10 @@
 	z-index: 1000;
 	background-color: rgb(25, 28, 31);
 	transition: top 0.3s;
-	scroll-behavior: smooth;
 }
 
 .active {
+	overflow: hidden;
 	top: 0;
 	transition: top 0.3s;
 }

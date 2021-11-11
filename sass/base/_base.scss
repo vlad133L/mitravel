@@ -45,6 +45,10 @@ body {
 	font-family: 'SFProDisplay', sans-serif;
 }
 
+.body--scroll {
+	overflow: hidden;
+}
+
 input,
 button,
 textarea {
