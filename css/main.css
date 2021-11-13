@@ -143,7 +143,7 @@ h6 {
 
 /*--------------------*/
 .header {
-  background-image: url("./../img/bg.jpg");
+  background-image: url("./../img/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 1080px;
@@ -569,8 +569,8 @@ h6 {
 }
 
 .featured {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 46, 59, 0.0001)), to(#091117)), url("./../img/featured.jpg");
-  background: linear-gradient(180deg, rgba(28, 46, 59, 0.0001) 0%, #091117 100%), url("./../img/featured.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 46, 59, 0.0001)), to(#091117)), url("./../img/featured.webp");
+  background: linear-gradient(180deg, rgba(28, 46, 59, 0.0001) 0%, #091117 100%), url("./../img/featured.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -884,7 +884,7 @@ h6 {
 }
 
 .signup {
-  background-image: url("./../img/signup.jpg");
+  background-image: url("./../img/signup.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
