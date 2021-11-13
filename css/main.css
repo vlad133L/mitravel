@@ -810,13 +810,13 @@ h6 {
   position: relative;
 }
 .swiper-slide--01 {
-  background-image: url("./../img/videos/01.jpg");
+  background-image: url("./../img/videos/01.webp");
 }
 .swiper-slide--02 {
-  background-image: url("./../img/videos/03.jpg");
+  background-image: url("./../img/videos/03.webp");
 }
 .swiper-slide--03 {
-  background-image: url("./../img/videos/02.jpg");
+  background-image: url("./../img/videos/02.webp");
 }
 .swiper-slide::after {
   content: "";
@@ -1227,14 +1227,14 @@ h6 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.461617) 100%);
 }
 .flex__item--01 {
-  background-image: url("./../img/insp/insp1.jpg");
+  background-image: url("./../img/insp/insp1.webp");
   min-height: 500px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 65.5%;
           flex: 0 0 65.5%;
 }
 .flex__item--02 {
-  background-image: url("./../img/insp/insp2.jpg");
+  background-image: url("./../img/insp/insp2.webp");
   min-height: 500px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33%;
@@ -1249,7 +1249,7 @@ h6 {
   margin-left: -20px;
 }
 .flex__item--03 {
-  background-image: url("./../img/insp/insp3.jpg");
+  background-image: url("./../img/insp/insp3.webp");
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
@@ -1267,7 +1267,7 @@ h6 {
   left: 40px;
 }
 .flex__item--04 {
-  background-image: url("./../img/insp/insp4.jpg");
+  background-image: url("./../img/insp/insp4.webp");
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
@@ -1285,7 +1285,7 @@ h6 {
   left: 40px;
 }
 .flex__item--05 {
-  background-image: url("./../img/insp/insp5.jpg");
+  background-image: url("./../img/insp/insp5.webp");
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
@@ -1317,7 +1317,7 @@ h6 {
           transform: translate(-50%);
 }
 .flex__item--07 {
-  background-image: url("./../img/insp/insp7.jpg");
+  background-image: url("./../img/insp/insp7.webp");
   min-height: 500px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 66%;
@@ -1325,7 +1325,7 @@ h6 {
   background-position: 50%;
 }
 .flex__item--06 {
-  background-image: url("./../img/insp/insp6.jpg");
+  background-image: url("./../img/insp/insp6.webp");
   min-height: 500px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32%;
