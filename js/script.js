@@ -56,13 +56,9 @@ for (let anchor of anchors) {
 
 const storybtn = document.querySelector('.stories__btn');
 const stories = document.querySelector('.featured-stories');
-const storyclose1 = document.querySelector('.stories__btn-line--01');
-const storyclose2 = document.querySelector('.stories__btn-line--02');
-const storyclose3 = document.querySelector('.stories__btn-line--03');
+const storyclose = document.querySelector('.stories__btn-line');
 storybtn.addEventListener('click',function(){
 	stories.classList.toggle('featured-stories--active');
-	storyclose1.classList.toggle('stories__btn-line--active-01');
-	storyclose2.classList.toggle('stories__btn-line--active-02');
-	storyclose3.classList.toggle('stories__btn-line--active-03');
+	storyclose.classList.toggle('stories__btn-line--active');
 })
 

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MITRAVEL</title>
 	<link rel="stylesheet" href="./css/main.css">
@@ -103,12 +102,10 @@
 			</div>
 		</section>
 		<section id="stories" class="featured none">
-			<button class="stories__btn" type="button" aria-label="open stories">
-				<span class="stories__btn-line--01"></span>
-				<span class="stories__btn-line--02"></span>
-				<span class="stories__btn-line--03"></span>
-			</button>
 			<div class="container">
+				<button class="stories__btn" type="button" aria-label="open stories">
+					<span class="stories__btn-line"></span>
+				</button>
 				<div class="featured__text">
 					<button  class="featured__btn-first">FEATURED</button>
 					<h2 class="featured__title">How To Fly A Private Jet On Your Next Trip</h2>
@@ -334,17 +331,6 @@
 		</footer>
 	</div>
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("a[href*=#main]").on("click","a", function (event) {
-				event.preventDefault();
-				var id  = $(this).attr('href'),
-					top = $(id).offset().top;
-				$('body,html').animate({scrollTop: top}, 1500);
-			});
-		});
-</script> -->
 	<script src="./js/script.js"></script>
 </body>
 </html>

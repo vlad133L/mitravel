@@ -724,65 +724,48 @@ h6 {
 .stories__btn-line {
   background-color: #ffffff;
   position: absolute;
-}
-.stories__btn-line--01 {
   position: absolute;
   background-color: #ffffff;
-  height: 2px;
-  width: 100%;
-  left: 0;
-  bottom: 8px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.stories__btn-line--02 {
-  position: absolute;
-  background-color: #ffffff;
-  height: 2px;
-  width: 100%;
-  left: 0;
-  top: 10px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.stories__btn-line--03 {
-  position: absolute;
-  background-color: #ffffff;
-  height: 2px;
+  height: 3px;
   width: 100%;
   top: 18px;
   left: 0;
 }
+.stories__btn-line::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 100%;
+  top: -9px;
+  left: 0;
+  transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in;
+}
+.stories__btn-line::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 100%;
+  top: 9px;
+  left: 0;
+  transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in;
+}
 
-.stories__btn-line--active-01 {
+.stories__btn-line--active {
+  background-color: transparent;
+}
+.stories__btn-line--active::after {
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in 0.15s;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  bottom: 16px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.stories__btn-line--active-02 {
-  -webkit-transform-origin: center;
-          transform-origin: center;
+.stories__btn-line--active::before {
+  top: 0;
+  transition: top 0.15s linear, transform 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in 0.15s;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: 17px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.stories__btn-line--active-03 {
-  width: 0;
-  height: 0;
 }
 
 .videos {
